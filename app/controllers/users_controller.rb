@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
-  def new
+  def new #uj @user instans valtozo
     @user=User.new
   end
   
-  def show
+  def show # @user = az id altal azonositott felhasznalo
     @user=User.find(params[:id])
   end
   
